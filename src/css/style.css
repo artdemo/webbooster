@@ -1,0 +1,213 @@
+/*=================BASE===================*/
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 1921px) {
+	html {
+		font-size: 100%;
+	}
+}
+
+body {
+	margin: 0;
+	padding: 10px;
+	padding-bottom: 1000px;
+}
+
+input {
+	font-family: inherit;
+}
+
+/*================PRODUCTS=================*/
+.products {
+	display: flex;
+	flex-flow: row wrap;
+	margin: -10px;
+}
+
+.products_product {
+	flex-basis: 100%;
+	padding: 10px;
+}
+
+/*================PRODUCT=================*/
+@media (min-width: 415px) {
+	.products_product {
+		flex-basis: calc(50% - 20px);
+	}
+}
+
+@media (min-width: 769px) {
+	.products_product {
+		flex-basis: calc(25% - 20px);
+	}
+}
+
+.product {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+}
+
+.product__title {
+	text-align: center;
+	margin: 15px 0;
+	font-size: 1.6rem;
+	font-weight: normal;
+}
+
+.product__img {
+	order: -1;
+}
+
+.product__img img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.product__price {
+	margin-bottom: 15px;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+/*==================BUTTON==================*/
+.button {
+	min-width: 100px;
+	max-width: 200px;
+	line-height: 30px;
+	height: 30px;
+	text-align: center;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 2px;
+	font-size: 1.6rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 0 15px;
+}
+
+.button_bold {
+	background-color: #f13c6e;
+	background-color: rgba(241, 60, 110, 1);
+	border-radius: 30px/25px;
+	color: white;
+}
+
+.button_bold:hover {
+	background-color: rgba(187, 46, 85, 1);
+}
+
+.button_bold:active {
+	box-shadow: 0 0 0 1px gray;
+}
+
+.button_simple {
+	background-color: rgba(226, 226, 226, 1);
+}
+
+.button_simple:hover {
+	background-color: rgba(183, 181, 181, 1);
+}
+
+.button_simple:active {
+	box-shadow: 0 0 0 1px gray;
+}
+
+/*=================MODAL==================*/
+.modal {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(158, 158, 158, 0.77);
+	visibility: hidden;
+}
+
+.modal__payload {
+	position: relative;
+}
+
+.modal__button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translate(100%, -100%);
+	font-size: 2rem;
+	border: none;
+	background: none;
+	line-height: 1;
+	padding: 0;
+	cursor: pointer;
+	outline: none;
+}
+
+/*===============FORM==============*/
+.form {
+	background-color: white;
+	padding: 20px;
+}
+
+.form::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.form__button {
+	float: right;
+	clear: right;
+}
+
+.form__control {
+	float: left;
+	clear: left;
+	height: 30px;
+	line-height: 30px;
+	font-size: 1.6rem;
+}
+
+.form__control {
+	margin-bottom: 20px;
+}
+
+.form__label {
+	float: left;
+	clear: right;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 10px;
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+
+@media (min-width: 769px) {
+	.form__control {
+		float: right;
+		clear: right;
+	}
+}
+
+/*===============MODAL BEHAVIOR===============*/
+.is-modal-visible .modal {
+	visibility: visible;
+}
+
+/*==================SUCCESS====================*/
+.success-msg {
+	font-size: 1.6rem;
+}
