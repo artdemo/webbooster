@@ -1,2 +1,2 @@
 # webbooster
-<a href="https://drive.google.com/file/d/1n6I1-lnmKSuS9bn-lgM0U4Y8wUSVdhrJ/view?usp=sharing">Тестовое задание</a> для компании ВебБустер
+<a href="https://docs.google.com/document/d/1pLpCVmIAc7IM2TfgBqGUSbgVwrysNXwdhLNrzOQfCa4/edit?usp=sharing">Тестовое задание</a> для компании ВебБустер
